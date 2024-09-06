@@ -1,0 +1,8 @@
+name: 'Zeon - No run own actions'
+description: 'Do not run workflow if zeon commits (or author).'
+outputs:
+  skip: # id of output
+    description: 'if it should be skipped'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
